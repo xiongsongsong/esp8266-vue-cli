@@ -1,3 +1,8 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  chainWebpack: (config, options) => {
+    config.optimization.splitChunks({
+      minChunks: Infinity
+    })
+  }
 }
