@@ -42,7 +42,7 @@
           <li>合并css、js，甚至将css和js内联到html中</li>
         </ul>
         <p>下方图片为DataURI方式引入的：</p>
-        <img :src="esp8266_png" />
+        <img src="@/assets/esp8266.png" />
       </el-col>
     </el-row>
   </div>
@@ -50,12 +50,10 @@
 
 <script>
 // @ is an alias to /src
-import esp8266_png from '@/assets/esp8266-base64.js'
 export default {
   name: 'home',
   data() {
     return {
-      esp8266_png,
       value1: true,
       value2: true,
       value3: 2.3
